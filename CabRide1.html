@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cabs, Autos & Car Rentals | CabRide</title>
+    <link rel="stylesheet" href="CabRide_style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="shortcut icon" href="main logo" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="CabRide_style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="background-text">
+            <h1>Book a <span>Cab Now</span></h1>
+        </div>
+        <header class="header">
+            <a href="#" id="logo"><img src="main logo" alt="CabRide Logo" width="150"></a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#drive">Drive</a>
+                <a href="#rides">Rides</a>
+                <a href="#offers">Offers</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#support">Support</a>
+                <a href="#about">About</a>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn" class="auth-btn">Login</button>
+                <button id="signup-btn" class="auth-btn signup">Sign Up</button>
+                <div id="user-menu" class="user-menu" style="display:none;">
+                    <span id="user-name"></span>
+                    <button id="logout-btn">Logout</button>
+                </div>
+            </div>
+            <button id="menu-bars" class="fas fa-bars" aria-label="Toggle navigation menu"></button>
+        </header>
+        <div class="taxi-image">
+            <img src="cab front" alt="Taxi car illustration">
+        </div>
+    </div>
+
+    <section class="home-container" id="home">
+        <div class="home-content">
+            <div class="inner-content">
+                <h2>Best in City</h2>
+                <h3>Trusted Cab Service in Country</h3>
+                <p>To travel with the lowest fares choose CabRide Share. For a faster travel experience we have Share Express on some fixed routes with zero deviations. Choose your ride and zoom away!</p>
+                <a href="#booking-form" class="booknow">Book Now</a>
+            </div>
+            <div class="inner-content">
+                <form class="contact-form" id="booking-form">
+                    <div class="form-heading">
+                        <h2>Book a Cab</h2>
+                    </div>
+                    <div class="form-fields">
+                        <input type="text" id="name" placeholder="Full Name" required aria-label="Full Name">
+                        <input type="tel" id="phone" placeholder="Phone Number" required aria-label="Phone Number">
+                        <input type="date" id="date" required aria-label="Travel Date">
+                        <input type="time" id="time" required aria-label="Travel Time">
+                        <input type="text" id="pickup" placeholder="Pickup Location" required aria-label="Pickup Location">
+                        <input type="text" id="drop" placeholder="Drop Location" required aria-label="Drop Location">
+                    </div>
+                    <div class="search-cabs">
+                        <button type="submit">Search Cabs</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="payment-section">
+    <div class="payment-container">
+        <h3>Select Payment Method</h3>
+        <p>Total Fare: <b>₹450.00</b></p>
+        
+        <div class="method">
+            <input type="radio" name="pay" id="upi">
+            <label for="upi">UPI (GPay / PhonePe)</label>
+        </div>
+        
+        <div class="method">
+            <input type="radio" name="pay" id="card">
+            <label for="card">Credit / Debit Card</label>
+        </div>
+        
+        <div class="method">
+            <input type="radio" name="pay" id="cash" checked>
+            <label for="cash">Cash on Arrival</label>
+        </div>
+        
+        <button class="btn-pay">CONFIRM BOOKING</button>
+    </div>
+</section>
+
+
+    <section class="fast-booking">
+        <h2 class="fast-heading">We Do Best</h2>
+        <h3>Than You Wish</h3>
+        <div class="inner-fast">
+            <div class="booking-content">
+                <div class="icon-fast">
+                    <span><i class="fas fa-rupee-sign"></i></span>
+                </div>
+                <div class="inner-fast-text">
+                    <h4>Cab for Every Pocket</h4>
+                    <p>From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every pocket. You can also go cashless and travel easy.</p>
+                </div>
+            </div>
+            <div class="booking-content">
+                <div class="icon-fast">
+                    <span><i class="fas fa-shield-alt"></i></span>
+                </div>
+                <div class="inner-fast-text">
+                    <h4>Secure and Safer Rides</h4>
+                    <p>Verified drivers, an emergency alert button, and live ride tracking are some of the features that we have in place to ensure you a safe travel experience.</p>
+                </div>
+            </div>
+            <div class="booking-content">
+                <div class="icon-fast">
+                    <span><i class="fas fa-car"></i></span>
+                </div>
+                <div class="inner-fast-text">
+                    <h4>Share and Express</h4>
+                    <p>To travel with the lowest fares choose CabRide Share. For a faster travel experience we have Share Express on some fixed routes with zero deviations. Choose your ride and zoom away!</p>
+                </div>
+            </div>
+            <div class="booking-content">
+                <div class="icon-fast">
+                    <span><i class="fas fa-music"></i></span>
+                </div>
+                <div class="inner-fast-text">
+                    <h4>In Cab Entertainment</h4>
+                    <p>Play music, watch videos and a lot more with CabRide Play! Also stay connected even if you are travelling through poor network areas with our free Wi-fi facility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-tariff" id="rides">
+        <h2>Our <span>Rides</span></h2>
+        <div class="inner-tariff">
+            <div class="tariff-container">
+                <div class="inner-box1">
+                    <img src="mini" alt="Mini cab" width="175" height="89">
+                    <h3>Mini</h3>
+                    <p>A regular comfortable AC hatchback that becomes your everyday dependable ride. An economical option for daily commute.</p>
+                    <h4>Small fares for short rides</h4>
+                    <button type="button" class="request-btn">Request Now</button>
+                </div>
+            </div>
+            <div class="tariff-container">
+                <div class="inner-box2">
+                    <img src="auto2" alt="Auto rickshaw" width="230">
+                    <h3>Auto</h3>
+                    <p>The all too familiar auto ride, minus the hassle waiting and haggling for price. A convenient way to travel everyday.</p>
+                    <h4 class="yellow-section">Get an auto at your doorstep!</h4>
+                    <button type="button" class="request-btn btn-yellow">Request Now</button>
+                </div>
+            </div>
+            <div class="tariff-container">
+                <div class="inner-box3">
+                    <img src="suv" alt="Prime SUV" width="210">
+                    <h3>Prime SUV</h3>
+                    <p>SUVs with free Wi-fi and top drivers for a comfortable getaway with room for everyone including that extra bag.</p>
+                    <h4>Perfect for weekend family getaways</h4>
+                    <button type="button" class="request-btn">Request Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="drive-section" id="drive">
+        <h2>Become a CabRide Driver</h2>
+        <div class="drive-content">
+            <div class="drive-card">
+                <i class="fas fa-car"></i>
+                <h3>Flexible Hours</h3>
+                <p>Work whenever you want. Be your own boss and earn on your terms.</p>
+            </div>
+            <div class="drive-card">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Competitive Earnings</h3>
+                <p>Earn up to ₹50,000 per month with our transparent pricing model.</p>
+            </div>
+            <div class="drive-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safety & Support</h3>
+                <p>24/7 customer support and insurance coverage for all drivers.</p>
+            </div>
+            <div class="drive-card">
+                <i class="fas fa-star"></i>
+                <h3>Build Your Rating</h3>
+                <p>Earn rewards and bonuses based on your customer ratings.</p>
+            </div>
+        </div>
+        <button class="apply-btn">Apply Now</button>
+    </section>
+
+    <section class="offers-section" id="offers">
+        <h2>Special Offers & Discounts</h2>
+        <div class="offers-grid">
+            <div class="offer-card">
+                <div class="offer-badge">50% OFF</div>
+                <h3>First Ride</h3>
+                <p>Get 50% discount on your first ride. Use code: FIRST50</p>
+                <button class="offer-btn">Claim Offer</button>
+            </div>
+            <div class="offer-card">
+                <div class="offer-badge">₹100 OFF</div>
+                <h3>Referral Bonus</h3>
+                <p>Refer a friend and get ₹100 credit for both of you.</p>
+                <button class="offer-btn">Refer Now</button>
+            </div>
+            <div class="offer-card">
+                <div class="offer-badge">FREE</div>
+                <h3>Airport Transfer</h3>
+                <p>Free airport pickup for bookings above ₹500.</p>
+                <button class="offer-btn">Book Now</button>
+            </div>
+            <div class="offer-card">
+                <div class="offer-badge">20% OFF</div>
+                <h3>Monthly Pass</h3>
+                <p>Subscribe to monthly pass and save 20% on all rides.</p>
+                <button class="offer-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <h2>Our Fleet</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="mini" alt="Mini Cab">
+                <h3>Mini</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="auto2" alt="Auto">
+                <h3>Auto</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="suv" alt="Prime SUV">
+                <h3>Prime SUV</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="luxury" alt="Luxury">
+                <h3>Luxury</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>About CabRide</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Trusted Ride Partner</h3>
+                <p>CabRide has been serving millions of customers since 2015. We are committed to providing safe, reliable, and affordable cab services across the country.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>5M+</h4>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h4>50K+</h4>
+                        <p>Active Drivers</p>
+                    </div>
+                    <div class="stat">
+                        <h4>100+</h4>
+                        <p>Cities Covered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="some-faqs" id="support">
+        <h2>Cab Booking FAQs</h2>
+        <div class="main-faqs">
+            <div class="faqs">
+                <div class="ques">
+                    <h3>What kind of cabs you can book from CabRide?</h3>
+                </div>
+                <div class="ans">
+                    <p>You can book following kinds of cabs from CabRide: airport cabs and intercity cabs / outstation cabs. You can book outstation cabs for both one-way transfers & round-trip transfers.</p>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="ques">
+                    <h3>How can I book cheap cabs online?</h3>
+                </div>
+                <div class="ans">
+                    <p>CabRide helps you with online cab booking at the best prices, comparatively much lower than the local vendors. Also you can use promo codes and offers on the CabRide website & app on online cab booking to get extra discounts.</p>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="ques">
+                    <h3>What are the advantages of online taxi booking?</h3>
+                </div>
+                <div class="ans">
+                    <p>Online taxi booking not only helps you with best prices but also helps you with the convenience of paying through multiple payment options (like Debit Card, Credit Card, eWallets etc.). You can easily compare prices and choose various categories of cabs like Hatchback cars, Sedan and SUV.</p>
+                </div>
+            </div>
+            <div class="faqs">
+                <div class="ques">
+                    <h3>What are the popular outstation cab booking routes?</h3>
+                </div>
+                <div class="ans">
+                    <p>Some of the popular outstation cab booking routes are Pune to Mumbai cabs, Delhi to Jaipur cabs, Delhi to Agra cabs, Pondicherry to Chennai cabs, Ahmedabad to Vadodara cabs, Bangalore to Mysore cabs and Mumbai to Pune cabs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CabRide</h4>
+                <p>Your trusted ride partner</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rides">Rides</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@cabride.com</p>
+                <p>Phone: 1800-CABRIDE</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CabRide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" id="signup-name" placeholder="Full Name" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="tel" id="signup-phone" placeholder="Phone Number" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
